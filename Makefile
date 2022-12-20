@@ -1,5 +1,9 @@
+CC = gcc
+
+default: compile
+
 compile:
-	gcc -v main.c -fgcse-after-reload \
+	$(CC) -v main.c -fgcse-after-reload \
 				  -fipa-cp-clone \
                   -floop-interchange \
                   -floop-unroll-and-jam \
